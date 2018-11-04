@@ -1,6 +1,18 @@
+## General Notes on Project
+
+Please look in the /src folder at App.js and ImageContainer.js for relevant React components. Please note, a couple assumptions were made:
+1. Data from .csv file was converted to a JS array and stored in /src/data.js. If this data was expected to be handled in another way, please let me know!
+1. Images were not resized to fit a browser window. As the images represent raw data, I didn't want to manipulate them in any way. This makes the UI/UX less-than-ideal, as the images are very large. Let me know if you'd like to see some style improvements there.
+1. React siblings require a key prop, which must be unique. For images, I assumed the combination of image name and label would create a unique identifier. It works on the provided data set, but please let me know if this is an incorrect assumption.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+Install dependencies before trying to run the app locally:
+
+### `npm install`
+
 
 In the project directory, you can run:
 
